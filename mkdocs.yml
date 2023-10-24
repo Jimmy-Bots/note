@@ -1,0 +1,6 @@
+site_name: Jimmy's Note
+site_url: http://note.jsta.ml/
+nav:
+  - Home: index.md
+  - Others: others.md
+theme: readthedocs
