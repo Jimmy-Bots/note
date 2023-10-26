@@ -16,6 +16,36 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>http://note.jsta.ml/cs/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://note.jsta.ml/ctf/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://note.jsta.ml/ctf/knowledge/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://note.jsta.ml/ctf/writeups/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://note.jsta.ml/ctf/writeups/ethernaut/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>http://note.jsta.ml/ctf/writeups/zjuctf2023/</loc>
+         <lastmod>2023-10-26</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>http://note.jsta.ml/others/</loc>
          <lastmod>2023-10-26</lastmod>
          <changefreq>daily</changefreq>
