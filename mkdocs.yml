@@ -112,14 +112,18 @@ nav:
     - cs/index.md
   - CTF:
     - ctf/index.md
-    - Knowledge:
-      - ctf/knowledge/index.md
+    - MISC:
+      - ctf/misc/index.md
+    - Web:
+      - ctf/web/index.md
     - Writeups:
       - ctf/writeups/index.md
       - Learning:
         - Ethernaut: ctf/writeups/ethernaut.md
       - 2023:
-        - ZJUCTF 2023: ctf/writeups/zjuctf2023.md 
+        - ZJUCTF 2023: ctf/writeups/zjuctf2023.md
+    - Tools:
+      - ctf/tools/index.md
   - Others: 
     - others/index.md
     - ToDo: todo.md

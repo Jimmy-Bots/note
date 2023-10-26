@@ -5,6 +5,14 @@
 
 ## Table of Contents
 
+{{ BEGIN_TOC }}
 
-- [Knowledge](knowledge/index.md)
-- [Writeups](writeups/index.md)
+- misc:
+  - Steganography 隐写术: misc/steg/
+- Web:
+  - todo: web/
+- Others: 
+  - Writeups: writeups/
+  - Tools: tools/
+
+{{ END_TOC }}
