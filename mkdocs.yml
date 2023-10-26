@@ -53,6 +53,16 @@ markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
 
+validation:
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: info
+  links:
+    not_found: ignore
+    absolute_links: ignore
+    unrecognized_links: ignore
+
 extra_css:
   - https://cdn.tonycrane.cc/utils/katex.min.css
   - https://cdn.tonycrane.cc/jbmono/jetbrainsmono.css
@@ -73,13 +83,13 @@ plugins:
   - search
   - glightbox:
       width: 80%
-  - encryptcontent:  # now just for one page, need to be improved
-      title_prefix: "🔒 "
-      remember_password: True 
-      default_expire_dalay: 48
-      decryption_failure_message: '密码错误'
-      encrypted_something:
-        mkdocs-encrypted-toc: [nav, class]
+  # - encryptcontent:  # now just for one page, need to be improved
+  #     title_prefix: "🔒 "
+  #     remember_password: True 
+  #     default_expire_dalay: 48
+  #     decryption_failure_message: '密码错误'
+  #     encrypted_something:
+  #       mkdocs-encrypted-toc: [nav, class]
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -90,7 +100,7 @@ plugins:
   - changelog
   - statistics:
       page_check_metadata: comment
-  - heti
+  # - heti
   # - tikzautomata
 
 
