@@ -83,13 +83,13 @@ plugins:
   - search
   - glightbox:
       width: 80%
-  # - encryptcontent:  # now just for one page, need to be improved
-  #     title_prefix: "🔒 "
-  #     remember_password: True 
-  #     default_expire_dalay: 48
-  #     decryption_failure_message: '密码错误'
-  #     encrypted_something:
-  #       mkdocs-encrypted-toc: [nav, class]
+  - encryptcontent:  # now just for one page, need to be improved
+      title_prefix: "🔒 "
+      remember_password: True 
+      default_expire_dalay: 48
+      decryption_failure_message: '密码错误'
+      encrypted_something:
+        mkdocs-encrypted-toc: [nav, class]
   - git-revision-date-localized:
       type: datetime
       timezone: Asia/Shanghai
@@ -108,4 +108,5 @@ nav:
   - Home: 
     - index.md
   - Others: 
-    - others.md
+    - others/index.md
+    - ToDo: todo.md
