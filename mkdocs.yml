@@ -100,6 +100,7 @@ plugins:
   - changelog
   - statistics:
       page_check_metadata: comment
+  - toc
   # - heti
   # - tikzautomata
 

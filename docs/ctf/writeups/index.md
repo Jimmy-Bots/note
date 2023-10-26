@@ -5,10 +5,11 @@
 
 ## Table of Contents
 
-### Learning
+{{ BEGIN_TOC }}
 
-- [Ethernaut](ethernaut.md)
+- Learning:
+  - Ethernaut: ../ethernaut/
+- '2023':
+  - 🔒 ZJUCTF 2023: ../zjuctf2023/
 
-### 2023
-
-- [🔒 ZJUCTF 2023](zjuctf2023.md)
+{{ END_TOC }}
