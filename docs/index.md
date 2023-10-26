@@ -5,11 +5,9 @@ home: true
 template: home.html
 statistics: true
 ---
-# Welcome to Jimmy's Notebook
+# 这里一片荒芜，寸草不生
 
-websites: [note.jsta.tk](https://note.jsta.tk)
-
-Loading...
+这里是咕咕咕（Jimmy）的空白笔记本! :) orz
 
 [:material-clock-time-two-outline: 最近更新](changelog/) / 
 [:octicons-link-16: 朋友们!](links/) / 
