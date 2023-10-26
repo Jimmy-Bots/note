@@ -107,6 +107,18 @@ plugins:
 nav:
   - Home: 
     - index.md
+  - Computer Foundation:
+    - cs/index.md
+  - CTF:
+    - ctf/index.md
+    - Knowledge:
+      - ctf/knowledge/index.md
+    - Writeups:
+      - ctf/writeups/index.md
+      - Learning:
+        - Ethernaut: ctf/writeups/ethernaut.md
+      - 2023:
+        - ZJUCTF 2023: ctf/writeups/zjuctf2023.md 
   - Others: 
     - others/index.md
     - ToDo: todo.md
