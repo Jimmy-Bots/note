@@ -10,6 +10,7 @@
 - Learning:
   - Ethernaut: ../ethernaut/
 - '2023':
+  - Hackergame 2023: ../hackergame2023/
   - 🔒 ZJUCTF 2023: ../zjuctf2023/
 
 {{ END_TOC }}
