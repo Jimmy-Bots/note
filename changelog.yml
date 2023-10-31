@@ -1,0 +1,7 @@
+- "2023":
+  - "2023-10-26":
+    - newpage: 
+        text: ZJUCTF 2023 Writeup
+        href: /ctf/writeups/zjuctf2023/
+  - "2023-10-25":
+    - function: 使用TonyCrane Toolchain完成了初步note的部署
