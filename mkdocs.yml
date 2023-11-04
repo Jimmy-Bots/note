@@ -112,6 +112,8 @@ nav:
     - cs/index.md
   - AI:
     - ai/index.md
+    - Tensorflow: ai/tensorflow.md
+    - PyTorch: ai/pytorch.md
   - CTF:
     - ctf/index.md
     - MISC:
