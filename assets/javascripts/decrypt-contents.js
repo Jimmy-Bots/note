@@ -156,7 +156,7 @@ function decrypt_action(password_input, encrypted_content, decrypted_content) {
         // create HTML element for the inform message
         var decrypt_msg = document.createElement('p');
         decrypt_msg.setAttribute('id', 'mkdocs-decrypt-msg');
-        var node = document.createTextNode('ÃÜÂë´íÎó');
+        var node = document.createTextNode('å¯†ç é”™è¯¯');
         decrypt_msg.appendChild(node);
         var mkdocs_decrypt_msg = document.getElementById('mkdocs-decrypt-msg');
         // clear all previous failure messages
