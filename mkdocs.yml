@@ -101,7 +101,7 @@ plugins:
   - statistics:
       page_check_metadata: comment
   - toc
-  # - heti
+  - heti
   # - tikzautomata
 
 
@@ -112,6 +112,8 @@ nav:
     - cs/index.md
   - AI:
     - ai/index.md
+    - Courses:
+      - AI & Medical Image: ai/course/ai_med.md
     - Tensorflow: ai/tensorflow.md
     - PyTorch: ai/pytorch.md
   - CTF:
