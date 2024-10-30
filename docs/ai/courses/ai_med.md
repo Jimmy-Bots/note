@@ -93,3 +93,20 @@ counter: true
     2017 Google Brain Attention Is All You Need
     #### Diffusion
     略
+
+### Linear Algorithm
+
+$$
+Y=EX
+$$
+
+- Y is given
+- If E is given, X is the target: image reconstruction
+- If X is given, E is the target: machine learning
+
+#### Inner product
+
+内积的意义：投影
+$$
+x·y=|x||y|cos\theta
+$$

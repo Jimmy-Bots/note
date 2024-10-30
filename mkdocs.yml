@@ -129,6 +129,9 @@ nav:
       - 2023:
         - Hackergame 2023: ctf/writeups/hackergame2023.md
         - ZJUCTF 2023: ctf/writeups/zjuctf2023.md
+      - 2024:
+        - Hackergame 2024: ctf/writeups/hackergame2024.md
+        - ZJUCTF 2024: ctf/writeups/zjuctf2024.md
     - Tools:
       - ctf/tools/index.md
   - Others: 
