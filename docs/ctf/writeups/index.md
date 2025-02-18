@@ -12,5 +12,8 @@
 - '2023':
   - Hackergame 2023: hackergame2023/
   - 🔒 ZJUCTF 2023: zjuctf2023/
+- '2024':
+  - Hackergame 2024: hackergame2024/
+  - 🔒 ZJUCTF 2024: zjuctf2024/
 
 {{ END_TOC }}

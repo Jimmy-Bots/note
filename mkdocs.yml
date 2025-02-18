@@ -113,7 +113,7 @@ nav:
   - AI:
     - ai/index.md
     - Courses:
-      - AI & Medical Image: ai/course/ai_med.md
+      - AI & Medical Image: ai/courses/ai_med.md
     - Tensorflow: ai/tensorflow.md
     - PyTorch: ai/pytorch.md
   - CTF:
