@@ -1,5 +1,6 @@
 ---
 counter: True
+statistic: true
 ---
 
 # Hackergame 2024
@@ -254,12 +255,22 @@ Ref：[zk-bug-tracker](https://github.com/0xPARC/zk-bug-tracker)，[1. Missing B
     解题代码是基于 llama.cpp 改的，diff 被导出成了 exp.patch 文件，选手想自己运行的话方法大致如下：
 
     clone https://github.com/ggerganov/llama.cpp/
+
     checkout c421ac072d46172ab18924e1e8be53680b54ed3b
+
     apply exp.patch
+
     modify examples/simple/simple.cpp L23 for censored chars
+
     modify examples/simple/simple.cpp L178 for prompt
+    
     modify examples/simple/simple.cpp L202 for number of threads
+
     make (optional with GGML_CUDA=1)
+
     copy after.txt & before.sha256 to current dir
+
     ./llama-simple -m /path/to/qwen2.5-3b-instruct-q8_0.gguf
+
     echo "flag{llm_lm_lm_koshitantan_$(sha512sum output.txt | cut -d ' ' -f1 | cut -c1-16)}"
+    

@@ -1,10 +1,10 @@
 site_name: Jimmy's Note
-site_url: http://note.jsta.ml/
+site_url: http://note.jsta.top/
 repo_name: Jimmy-312/note
 repo_url: https://github.com/Jimmy-312/note/
 edit_uri: tree/main/docs
 site_description: Jimmy's Notebook
-copyright: Copyright &copy; 2023-2024 <a href="https://github.com/Jimmy-312" target="_blank" rel="noopener">Jimmy</a>
+copyright: Copyright &copy; 2023-2025 <a href="https://github.com/Jimmy-312" target="_blank" rel="noopener">Jimmy</a>
 
 theme: 
   name: 'material'
@@ -64,7 +64,7 @@ validation:
     unrecognized_links: ignore
 
 extra_css:
-  - https://cdn.jsta.top/utils/katex.min.css
+  - https://cdn.tonycrane.cc/utils/katex.min.css
   - https://cdn.jsta.top/jbmono/jetbrainsmono.css
   - https://cdn.jsta.top/lxgw/lxgwscreen.css
   - css/tasklist.css
@@ -87,7 +87,7 @@ plugins:
       title_prefix: "🔒 "
       remember_password: True 
       default_expire_dalay: 48
-      decryption_failure_message: '密码错误'
+      decryption_failure_message: '密码错误，再猜猜'
       encrypted_something:
         mkdocs-encrypted-toc: [nav, class]
   - git-revision-date-localized:
@@ -99,7 +99,7 @@ plugins:
         - index.md
   - changelog
   - statistics:
-      page_check_metadata: comment
+      page_check_metadata: statistic
   - toc
   - heti
   # - tikzautomata
@@ -108,32 +108,23 @@ plugins:
 nav:
   - Home: 
     - index.md
-  - Computer:
-    - cs/index.md
-  - AI:
-    - ai/index.md
-    - Courses:
-      - AI & Medical Image: ai/courses/ai_med.md
-    - Tensorflow: ai/tensorflow.md
-    - PyTorch: ai/pytorch.md
-  - CTF:
-    - ctf/index.md
-    - MISC:
-      - ctf/misc/index.md
-    - Web:
-      - ctf/web/index.md
-    - Writeups:
-      - ctf/writeups/index.md
-      - Learning:
-        - Ethernaut: ctf/writeups/ethernaut.md
-      - 2023:
-        - Hackergame 2023: ctf/writeups/hackergame2023.md
-        - ZJUCTF 2023: ctf/writeups/zjuctf2023.md
-      - 2024:
-        - Hackergame 2024: ctf/writeups/hackergame2024.md
-        - ZJUCTF 2024: ctf/writeups/zjuctf2024.md
-    - Tools:
-      - ctf/tools/index.md
+  - Blog:
+    - blog/index.md
+  - Writeups:
+    - writeups/index.md
+    - Learning:
+      - Ethernaut: writeups/ethernaut.md
+    - 2023:
+      - Hackergame 2023: writeups/hackergame2023.md
+      - ZJUCTF 2023: writeups/zjuctf2023.md
+    - 2024:
+      - Hackergame 2024: writeups/hackergame2024.md
+      - ZJUCTF 2024: writeups/zjuctf2024.md
+  - Legacy:
+    - legacy/index.md
+    - Old Blog:
+      - legacy/old_blog/20200309.md
+      - legacy/old_blog/20200318.md
+      - legacy/old_blog/20200328.md
   - Others: 
     - others/index.md
-    - ToDo: todo.md

@@ -1,5 +1,4 @@
 ---
-comment: True
 glightbox: False
 nostatistics: True
 ---

@@ -4,3 +4,10 @@
 .changelog-type-refactor::before {
     content: "文档重构";
 }
+
+.changelog-type-collect {
+    background-color: #129207cb;
+}
+.changelog-type-collect::before {
+    content: "文章收录";
+}

@@ -1,5 +1,6 @@
 ---
 counter: True
+statistic: True
 ---
 
 # Ethernaut
@@ -538,5 +539,3 @@ contract Exploit {
         }
     }
     ```
-
-## Privacy
