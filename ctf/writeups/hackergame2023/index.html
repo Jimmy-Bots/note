@@ -746,9 +746,6 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="hackergame-2023">Hackergame 2023<a class="headerlink" href="#hackergame-2023" title="Permanent link">¶</a></h1>
-<div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8V2m6.78 1a.69.69 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38-2.5-2.5z"></path></svg></span> 约<span class="heti-skip"><span class="heti-spacing"> </span>3143<span class="heti-spacing"> </span></span>个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><path d="m278.9 511.5-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2 43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6 144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"></path></svg></span> <span>222<span class="heti-spacing"> </span></span>行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3L12.5 13z"></path></svg></span> 预计阅读时间<span class="heti-skip"><span class="heti-spacing"> </span>13<span class="heti-spacing"> </span></span>分钟</p>
-</div>
 <div class="admonition abstract">
 <p class="admonition-title">Abstract</p>
 <p>这次忙里偷闲做的，还耽搁了一些事儿<span><span class="heti-spacing"> </span>qaq</span>。算是第一次<span class="heti-skip"><span class="heti-spacing"> </span>partly<span class="heti-spacing"> </span></span>完整地参加<span><span class="heti-spacing"> </span>Hackergame</span>，因为是面向初学者的比赛，题目难度不高更具有趣味性，特此记录一下。
@@ -775,7 +772,7 @@
 <h2 id="_4">组委会模拟器<a class="headerlink" href="#_4" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p>终于有一道需要写脚本的题目了（x</p>
 <p>直接<span class="heti-skip"><span class="heti-spacing"> </span>F12<span class="heti-spacing"> </span></span>看源码，发现后端是一次性把所有消息都发过来，那就很简单，之间找出满足要求的消息然后发起撤回请求即可。不过不能一次性都撤回，后端有<span class="heti-skip"><span class="heti-spacing"> </span>Delay<span class="heti-spacing"> </span></span>时间要求，可以根据消息内的<span class="heti-skip"><span class="heti-spacing"> </span>Delay<span class="heti-spacing"> </span></span>信息延迟后发送，当然也可以一直发送直到成功即可（主要省力无脑</p>
-<details>
+<details class="done">
 <summary>解题代码（慎用，概率事件，多试几次就好）</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
 <a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">json</span>
@@ -818,7 +815,7 @@
 <p>这题非常的<span><span class="heti-spacing"> </span>easy</span>，直接<code>git reflog</code>，再<code>git reset</code>就结束了。</p>
 <h2 id="http"><span>HTTP<span class="heti-spacing"> </span></span>集邮册<a class="headerlink" href="#http" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p>大致就是不断查文档，这里就直接搬官方题解了</p>
-<details>
+<details class="done">
 <summary>官方题解</summary>
 <ul>
 <li><span>200 OK.<span class="heti-spacing"> </span></span>点击就送，代表请求成功。
@@ -907,7 +904,7 @@
 </code></pre></div>
 <h2 id="20">惜字如金<span><span class="heti-spacing"> </span>2.0</span><a class="headerlink" href="#20" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p>直接暴力穷举即可，其实满足条件的情况很多，直接边跑边输出就很快能拿到<span class="heti-skip"><span class="heti-spacing"> </span>flag<span class="heti-spacing"> </span></span>了。</p>
-<details>
+<details class="done">
 <summary>解题代码（过于暴力）</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-16-1" id="__codelineno-16-1" name="__codelineno-16-1"></a><span class="n">cod_dict</span> <span class="o">=</span> <span class="p">[]</span>
 <a href="#__codelineno-16-2" id="__codelineno-16-2" name="__codelineno-16-2"></a><span class="n">cod_dict</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'nymeh1niwemflcir}echaet'</span><span class="p">]</span>
@@ -954,7 +951,7 @@
 <p>很新颖的<span class="heti-skip"><span class="heti-spacing"> </span>AI<span class="heti-spacing"> </span></span>题目，对于我来说只能乱试，第一问直接用<span class="heti-skip"><span class="heti-spacing"> </span>repeat<span class="heti-spacing"> </span></span>大法就可完成。
 第二问其实思路对的，不过我嫌麻烦，没有去穷举hhh。</p>
 <p>后面两问确实可以的，学习了。</p>
-<details>
+<details class="done">
 <summary>官方题解</summary>
 <h3 id="llm-attacks">LLM Attacks<a class="headerlink" href="#llm-attacks" title="Permanent link">¶</a></h3>
 <p>论文：<a href="https://arxiv.org/abs/2307.15043">Universal and Transferable Adversarial Attacks on Aligned Language Models</a></p>
@@ -972,8 +969,8 @@
 </details>
 <h2 id="_8">🪐 流式星球<a class="headerlink" href="#_8" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p>需要知道图像的长宽，怎么办呢？手动<span class="heti-skip"><span class="heti-spacing"> </span>plot<span class="heti-spacing"> </span></span>出来看呗，反正试一下很容易找到周期性重复的东西，然后微调一下得到长宽，直接输出视频即可。</p>
-<details class="解题代码">
-<summary>解题代码</summary>
+<details class="done 解题代码">
+<summary>Done</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="kn">import</span> <span class="nn">cv2</span>
 <a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 <a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a>
@@ -1007,7 +1004,7 @@
 <p>第三问思路其实对了，就是修改<span class="heti-skip"><span class="heti-spacing"> </span>TCP<span class="heti-spacing"> </span></span>中的<span class="heti-skip"><span class="heti-spacing"> </span>OPTION<span class="heti-spacing"> </span></span>部分，不过当时很忙，用<span class="heti-skip"><span class="heti-spacing"> </span>python<span class="heti-spacing"> </span></span>写的有点奇怪，没细调，如果空闲的话应该做出来没问题。</p>
 <h2 id="flag_1">为什么要打开<span><span class="heti-spacing"> </span>/flag</span> 😡<a class="headerlink" href="#flag_1" title="Permanent link">¶</a></h2>
 <p>第一问很<span class="heti-skip"><span class="heti-spacing"> </span>easy<span class="heti-spacing"> </span></span>直接静态编译后提交即可。第二问看了官方题解之后，知道要多看注释，用线程的方式来绕过<span><span class="heti-spacing"> </span>seccomp</span>，学习了。</p>
-<details>
+<details class="done">
 <summary>官方题解</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdio.h&gt;</span>
 <a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;pthread.h&gt;</span>
@@ -1066,7 +1063,7 @@
 <p>其实也没什么好总结的，就是没注意到<code>updateElement</code>，导致不知道怎么绕过长度限制。也是自己菜，其实没怎么做过<span class="heti-skip"><span class="heti-spacing"> </span>XSS<span class="heti-spacing"> </span></span>的题目，还是需要积累经验，感觉好的<span class="heti-skip"><span class="heti-spacing"> </span>XSS<span class="heti-spacing"> </span></span>题目不多。</p>
 <h2 id="f5">逆向工程不需要<span><span class="heti-spacing"> </span>F5</span><a class="headerlink" href="#f5" title="Permanent link"><span><span class="heti-spacing"> </span>¶</span></a></h2>
 <p>这道题记录一下，因为逆向的题目做得少，所以需要积累一下。</p>
-<details>
+<details class="done">
 <summary>官方题解中需要记录的习惯</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kn">import</span> <span class="nn">angr</span><span class="o">,</span> <span class="nn">monkeyhex</span><span class="o">,</span> <span class="nn">claripy</span>
 <a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="n">proj</span> <span class="o">=</span> <span class="n">angr</span><span class="o">.</span><span class="n">Project</span><span class="p">(</span><span class="s1">'no_need_for_F5/main.exe'</span><span class="p">)</span>
@@ -1117,7 +1114,7 @@
 </code></pre></div>
 </details>
 <p>然后就算一下<span class="heti-skip"><span class="heti-spacing"> </span>SHA1<span class="heti-spacing"> </span></span>后拼接即可，解题脚本如下：</p>
-<details>
+<details class="done">
 <summary>解题脚本（修改版，原版太杂乱了）</summary>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha1</span>
 <a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="kn">from</span> <span class="nn">pwn</span> <span class="kn">import</span> <span class="o">*</span>
@@ -1170,20 +1167,12 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年11月5日 13:18:20</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年2月19日 20:15:09</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2023年10月25日 00:06:17</span>
 </small>
 </div>
-<script async="" crossorigin="anonymous" data-category="General" data-category-id="DIC_kwDOGnfbUc4CPrf4" data-emit-metadata="0" data-input-position="bottom" data-lang="zh-CN" data-mapping="pathname" data-reactions-enabled="1" data-repo="Jimmy-312/note" data-repo-id="R_kgDOKkhuIw" data-theme="light" src="https://giscus.app/client.js">
-</script>
-<script>
-                      if (document.querySelector("body").getAttribute("data-md-color-scheme") === "slate") {
-                        var giscus = document.querySelector("script[src*=giscus]")
-                        giscus.setAttribute("data-theme", "https://gcore.jsdelivr.net/gh/TonyCrane/note/docs/css/giscus.css") 
-                      }
-                    </script>
 </article>
 </div>
 </div>
