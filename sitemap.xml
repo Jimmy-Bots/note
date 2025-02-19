@@ -1,107 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://note.jsta.ml/</loc>
+         <loc>http://note.jsta.top/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/changelog/</loc>
+         <loc>http://note.jsta.top/changelog/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/links/</loc>
+         <loc>http://note.jsta.top/links/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/todo/</loc>
+         <loc>http://note.jsta.top/blog/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ai/</loc>
+         <loc>http://note.jsta.top/legacy/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ai/pytorch/</loc>
+         <loc>http://note.jsta.top/legacy/old_blog/20200309/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ai/tensorflow/</loc>
+         <loc>http://note.jsta.top/legacy/old_blog/20200318/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ai/courses/</loc>
+         <loc>http://note.jsta.top/legacy/old_blog/20200328/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ai/courses/ai_med/</loc>
+         <loc>http://note.jsta.top/others/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/cs/</loc>
+         <loc>http://note.jsta.top/writeups/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ctf/</loc>
+         <loc>http://note.jsta.top/writeups/ethernaut/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ctf/misc/</loc>
+         <loc>http://note.jsta.top/writeups/hackergame2023/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ctf/tools/</loc>
+         <loc>http://note.jsta.top/writeups/hackergame2024/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ctf/web/</loc>
+         <loc>http://note.jsta.top/writeups/zjuctf2023/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://note.jsta.ml/ctf/writeups/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/ctf/writeups/ethernaut/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/ctf/writeups/hackergame2023/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/ctf/writeups/hackergame2024/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/ctf/writeups/zjuctf2023/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/ctf/writeups/zjuctf2024/</loc>
-         <lastmod>2025-02-19</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>http://note.jsta.ml/others/</loc>
+         <loc>http://note.jsta.top/writeups/zjuctf2024/</loc>
          <lastmod>2025-02-19</lastmod>
          <changefreq>daily</changefreq>
     </url>

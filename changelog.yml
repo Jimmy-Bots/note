@@ -1,7 +1,32 @@
+- "2025":
+  - "2025-02-19":
+    - collect: 
+        text: Legacy > Old Blog > 元胞自动机
+        href: /legacy/old_blog/20200328/
+    - collect: 
+        text: Legacy > Old Blog > 工高报名表填写感想
+        href: /legacy/old_blog/20200318/
+    - collect: 
+        text: Legacy > Old Blog > 开端
+        href: /legacy/old_blog/20200309/
+    - refactor: 删除了一部无用分类，增加了Blog、Legacy栏目
+      
+- "2024":
+  - "2024-10-22":
+    - newpage:
+        text: ZJUCTF 2024 Writeups
+        href: /writeups/zjuctf2024
+        
 - "2023":
   - "2023-10-26":
+    - newpage:
+        text: Ethernaut
+        href: /writeups/ethernaut/
     - newpage: 
         text: ZJUCTF 2023 Writeup
-        href: /ctf/writeups/zjuctf2023/
+        href: /writeups/zjuctf2023/
   - "2023-10-25":
-    - function: 使用TonyCrane Toolchain完成了初步note的部署
+    - newpage:
+        text: Hackergame 2023 Writeup
+        href: /writeups/hackergame2023
+    - function: 参照 TonyCrane 完成了网站的部署
