@@ -1,5 +1,4 @@
 ---
-comment: True
 counter: True
 ---
 

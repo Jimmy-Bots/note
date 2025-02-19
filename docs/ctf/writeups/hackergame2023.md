@@ -1,5 +1,4 @@
 ---
-comment: True
 counter: True
 ---
 
@@ -50,7 +49,7 @@ counter: True
 
 直接F12看源码，发现后端是一次性把所有消息都发过来，那就很简单，之间找出满足要求的消息然后发起撤回请求即可。不过不能一次性都撤回，后端有Delay时间要求，可以根据消息内的Delay信息延迟后发送，当然也可以一直发送直到成功即可（主要省力无脑
 
-??? "解题代码（慎用，概率事件，多试几次就好）"
+??? done "解题代码（慎用，概率事件，多试几次就好）"
     ```Python
     import requests
     import json
@@ -102,7 +101,7 @@ counter: True
 ## HTTP 集邮册
 
 大致就是不断查文档，这里就直接搬官方题解了
-??? "官方题解"
+??? done "官方题解"
     - 200 OK. 点击就送，代表请求成功。
         ```
         GET / HTTP/1.1\r\n
@@ -213,7 +212,7 @@ docker run -it --rm -v /:/outside alpine
 
 直接暴力穷举即可，其实满足条件的情况很多，直接边跑边输出就很快能拿到flag了。
 
-??? "解题代码（过于暴力）"
+??? done "解题代码（过于暴力）"
     ```Python
     cod_dict = []
     cod_dict += ['nymeh1niwemflcir}echaet']
@@ -265,7 +264,7 @@ docker run -it --rm -v /:/outside alpine
 
 后面两问确实可以的，学习了。
 
-??? "官方题解"
+??? done "官方题解"
     ### LLM Attacks
 
     论文：[Universal and Transferable Adversarial Attacks on Aligned Language Models](https://arxiv.org/abs/2307.15043)
@@ -297,7 +296,7 @@ docker run -it --rm -v /:/outside alpine
 
 需要知道图像的长宽，怎么办呢？手动plot出来看呗，反正试一下很容易找到周期性重复的东西，然后微调一下得到长宽，直接输出视频即可。
 
-??? 解题代码
+??? done 解题代码
     ```Python
     import cv2
     import numpy as np
@@ -339,7 +338,7 @@ docker run -it --rm -v /:/outside alpine
 
 第一问很easy直接静态编译后提交即可。第二问看了官方题解之后，知道要多看注释，用线程的方式来绕过seccomp，学习了。
 
-??? "官方题解"
+??? done "官方题解"
     ```C
     #include <stdio.h>
     #include <pthread.h>
@@ -405,7 +404,7 @@ docker run -it --rm -v /:/outside alpine
 
 这道题记录一下，因为逆向的题目做得少，所以需要积累一下。
 
-??? "官方题解中需要记录的习惯"
+??? done "官方题解中需要记录的习惯"
     ```Python
     import angr, monkeyhex, claripy
     proj = angr.Project('no_need_for_F5/main.exe')
@@ -462,7 +461,7 @@ admin:aaaaanRH
     ```
 然后就算一下SHA1后拼接即可，解题脚本如下：
 
-??? "解题脚本（修改版，原版太杂乱了）"
+??? done "解题脚本（修改版，原版太杂乱了）"
     ```Python
     from hashlib import sha1
     from pwn import *
