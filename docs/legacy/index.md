@@ -11,7 +11,7 @@
 
 {{ BEGIN_TOC }}
 
-- Learning:
+- Old Blog:
   - 开端: old_blog/20200309/
   - 工高报名表填写感想: old_blog/20200318/
   - 元胞自动机: old_blog/20200328/
