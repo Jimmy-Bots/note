@@ -1,5 +1,4 @@
 ---
-comment: True
 changelog: True
 nostatistics: True
 ---
@@ -7,9 +6,9 @@ nostatistics: True
 # 更新记录
 
 !!! abstract
-    这里记录一些note改动记录
+    这里记录一些note的较大改动记录
 
-    PS：这个功能用的是Tony佬的一个好用的插件 [:material-github: TonyCrane/mkdocs-changelog-plugin](https://github.com/TonyCrane/mkdocs-changelog-plugin)
+    Powered by [:material-github: TonyCrane/mkdocs-changelog-plugin](https://github.com/TonyCrane/mkdocs-changelog-plugin)
 
 <style>
 .md-typeset h2 {
@@ -17,5 +16,14 @@ nostatistics: True
 }
 </style>
 
+## 2025
+
+{{ 2025 }}
+
+## 2024
+
+{{ 2024 }}
+
 ## 2023
+
 {{ 2023 }}

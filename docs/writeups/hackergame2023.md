@@ -1,5 +1,6 @@
 ---
 counter: True
+statistic: true
 ---
 
 # Hackergame 2023
