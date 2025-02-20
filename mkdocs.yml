@@ -8,19 +8,47 @@ copyright: Copyright &copy; 2023-2025 <a href="https://github.com/Jimmy-312" tar
 
 theme: 
   name: 'material'
+  favicon: https://cdn.jsta.top/icon/jimmy_32c.ico
   language: 'zh'
   icon:
     logo: material/notebook-outline
   custom_dir: overrides
   features:
-    - content.code.annotate
-    - navigation.tracking
+    - content.code.annotate 
+    - content.code.copy #代码复制
+    - navigation.expand # 目录自动展开子目录
     - navigation.tabs
-    - navigation.indexes
-    - navigation.top
+    - navigation.tabs.sticky # 导航栏始终显示
+    # - navigation.instant
+    # - navigation.instant.progress # 页面顶部显示加载进度条
+    - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
+    - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
+    - navigation.indexes #启用节索引页后，可以将文档直接附加到节
+    - navigation.top # 返回顶部的按钮 在上滑时出现
+    # - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
+    - search.highlight # 搜索出的文章关键词加入高亮
+    - search.share #搜索分享按钮
+    - blog
   font: false
   palette:
-    - scheme: default
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: System Preference
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Light Mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Dark Mode
 
 markdown_extensions:
   - toc:
@@ -42,8 +70,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.inlinehilite
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.tasklist:
@@ -64,7 +92,7 @@ validation:
     unrecognized_links: ignore
 
 extra_css:
-  - https://cdn.tonycrane.cc/utils/katex.min.css
+  - https://cdn.jsta.top/utils/katex.min.css
   - https://cdn.jsta.top/jbmono/jetbrainsmono.css
   - https://cdn.jsta.top/lxgw/lxgwscreen.css
   - css/tasklist.css
@@ -77,6 +105,12 @@ extra_javascript:
   - https://cdn.jsta.top/utils/katex.min.js
   - js/katex.js
 
+extra:
+  consent:
+    title: Cookie 知情同意
+    description: 
+      此网站使用Cookie来改善您的体验。
+      <a href="https://www.cookiesandyou.com/">了解更多</a>
 
 plugins:
   # - rss
@@ -85,18 +119,20 @@ plugins:
       width: 80%
   - encryptcontent:  # now just for one page, need to be improved
       title_prefix: "🔒 "
-      remember_password: True 
-      default_expire_dalay: 48
-      decryption_failure_message: '密码错误，再猜猜'
+      remember_password: False 
+      decryption_failure_message: "密码错误，再猜猜"
       encrypted_something:
         mkdocs-encrypted-toc: [nav, class]
   - git-revision-date-localized:
-      type: datetime
+      type: custom
+      custom_format: "%Y年%m月%d日 %H:%M"
       timezone: Asia/Shanghai
       locale: zh
       enable_creation_date: true
       exclude:
         - index.md
+        - blog/archive/*
+        - blog/category/*
   - changelog
   - statistics:
       page_check_metadata: statistic
