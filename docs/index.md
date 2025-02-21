@@ -5,7 +5,7 @@ home: true
 template: home.html
 statistics: true
 ---
-# 这里一片荒芜，寸草不生
+<h1>这里一片荒芜，寸草不生</h1>
 
 这里是咕咕咕（Jimmy）的空白笔记本! :) orz
 
@@ -13,8 +13,8 @@ statistics: true
 [:octicons-link-16: 朋友们!](links/) / 
 [:material-chart-line: 站点统计](javascript:toggle_statistics();)
 
-<div id="statistics" markdown="1" class="card" style="width: 27em; border-color: transparent; opacity: 0; font-size: 75%">
-<div style="padding-left: 1em;" markdown="1">
+<div id="statistics" markdown="1" class="card" style="margin-left: 35px; width: 27em; border-color: transparent; opacity: 0; font-size: 75%">
+<div style="padding-left: 1em; text-align: left;" markdown="1">
 页面总数：{{pages}}  
 总字数：{{words}}  
 代码块行数：{{codes}}  
