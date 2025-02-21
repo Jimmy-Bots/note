@@ -111,6 +111,8 @@ extra:
     description: 
       此网站使用Cookie来改善您的体验。
       <a href="https://www.cookiesandyou.com/">了解更多</a>
+  analytics:
+    provider: custom
 
 plugins:
   # - rss
@@ -144,6 +146,8 @@ plugins:
 nav:
   - Home: 
     - index.md
+    - 更新记录: changelog.md
+    - 友链: links.md
   - Blog:
     - blog/index.md
   - Writeups:
@@ -162,5 +166,5 @@ nav:
       - legacy/old_blog/20200309.md
       - legacy/old_blog/20200318.md
       - legacy/old_blog/20200328.md
-  - Others: 
-    - others/index.md
+  - About: 
+    - about/index.md
