@@ -125,16 +125,16 @@ plugins:
       decryption_failure_message: "密码错误，再猜猜"
       encrypted_something:
         mkdocs-encrypted-toc: [nav, class]
-  - git-revision-date-localized:
-      type: custom
-      custom_format: "%Y年%m月%d日 %H:%M"
-      timezone: Asia/Shanghai
-      locale: zh
-      enable_creation_date: true
-      exclude:
-        - index.md
-        - blog/archive/*
-        - blog/category/*
+  # - git-revision-date-localized:
+  #     type: custom
+  #     custom_format: "%Y年%m月%d日 %H:%M"
+  #     timezone: Asia/Shanghai
+  #     locale: zh
+  #     enable_creation_date: true
+  #     exclude:
+  #       - index.md
+  #       - blog/archive/*
+  #       - blog/category/*
   - changelog
   - statistics:
       page_check_metadata: statistic
@@ -168,3 +168,4 @@ nav:
       - legacy/old_blog/20200328.md
   - About: 
     - about/index.md
+    - about/board.md
