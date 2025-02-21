@@ -1,0 +1,6 @@
+authors:
+  Jimmy:
+    name: Jimmy       # Author name
+    description: A Vibrant Bot # Author description
+    avatar: https://cdn.jsta.top/icon/jimmy_64c.ico        # Author avatar 
+    url: /about/            # Author website URL

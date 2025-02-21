@@ -14,6 +14,7 @@ theme:
     logo: material/notebook-outline
   custom_dir: overrides
   features:
+    - content.tooltips
     - content.code.annotate 
     - content.code.copy #代码复制
     - navigation.expand # 目录自动展开子目录
@@ -29,7 +30,6 @@ theme:
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
-    - blog
   font: false
   palette:
     # Palette toggle for automatic mode
@@ -55,6 +55,7 @@ markdown_extensions:
       permalink: true
       toc_depth: 4
   - meta
+  - abbr
   - def_list
   - attr_list
   - md_in_html
@@ -116,25 +117,29 @@ extra:
 
 plugins:
   # - rss
+  - blog:
+      blog_toc: true
+  - meta
   - search
   - glightbox:
       width: 80%
   - encryptcontent:  # now just for one page, need to be improved
       title_prefix: "🔒 "
-      remember_password: False 
-      decryption_failure_message: "密码错误，再猜猜"
+      remember_password: True 
+      default_expire_dalay: 48
+      decryption_failure_message: 密码错误，再猜猜
       encrypted_something:
         mkdocs-encrypted-toc: [nav, class]
-  # - git-revision-date-localized:
-  #     type: custom
-  #     custom_format: "%Y年%m月%d日 %H:%M"
-  #     timezone: Asia/Shanghai
-  #     locale: zh
-  #     enable_creation_date: true
-  #     exclude:
-  #       - index.md
-  #       - blog/archive/*
-  #       - blog/category/*
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%Y年%m月%d日 %H:%M"
+      timezone: Asia/Shanghai
+      locale: zh
+      enable_creation_date: true
+      enabled: !ENV [CI, false]
+      exclude:
+        - index.md
+        - blog/index.md
   - changelog
   - statistics:
       page_check_metadata: statistic
@@ -150,16 +155,17 @@ nav:
     - 友链: links.md
   - Blog:
     - blog/index.md
-  - Writeups:
-    - writeups/index.md
-    - Learning:
-      - Ethernaut: writeups/ethernaut.md
-    - 2023:
-      - Hackergame 2023: writeups/hackergame2023.md
-      - ZJUCTF 2023: writeups/zjuctf2023.md
-    - 2024:
-      - Hackergame 2024: writeups/hackergame2024.md
-      - ZJUCTF 2024: writeups/zjuctf2024.md
+  - Misc:
+    - Writeups:
+      - writeups/index.md
+      - Learning:
+        - Ethernaut: writeups/ethernaut.md
+      - 2023:
+        - Hackergame 2023: writeups/hackergame2023.md
+        - ZJUCTF 2023: writeups/zjuctf2023.md
+      - 2024:
+        - Hackergame 2024: writeups/hackergame2024.md
+        - ZJUCTF 2024: writeups/zjuctf2024.md
   - Legacy:
     - legacy/index.md
     - Old Blog:

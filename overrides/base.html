@@ -32,7 +32,7 @@
           <link rel="alternate" type="application/rss+xml" title="{{ lang.t('rss.updated') }}" href="{{ 'feed_rss_updated.xml' | url }}">
         {% endif %}
         <link rel="icon" href="{{ config.theme.favicon | url }}">
-        <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-8.1.4">
+        <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-9.6.4">
       {% endblock %}
       {% block htmltitle %}
         {% if page and page.meta and page.meta.home %}
@@ -157,7 +157,7 @@
                 {% if page.meta and page.meta.hide %}
                   {% set hidden = "hidden" if "navigation" in page.meta.hide %}
                 {% endif %}
-                <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+                <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
                   <div class="md-sidebar__scrollwrap">
                     <div class="md-sidebar__inner">
                       {% include "partials/nav.html" %}
@@ -185,59 +185,6 @@
                 <article class="md-content__inner md-typeset">
                   {% block content %}
                     {% include "partials/content.html" %}
-                    {% if page and page.meta and page.meta.comment %}
-                      <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
-                      <script src="https://giscus.app/client.js"
-                              data-repo="Jimmy-Bots/note"
-                              data-repo-id="R_kgDOKkhuIw"
-                              data-category="General"
-                              data-category-id="DIC_kwDOKkhuI84Cacu5"
-                              data-mapping="pathname"
-                              data-reactions-enabled="1"
-                              data-emit-metadata="0"
-                              data-input-position="top"
-                              data-theme="dark"
-                              data-lang="zh-CN"
-                              data-loading="lazy"
-                              crossorigin="anonymous"
-                              async>
-                      </script>
-                      <!-- Synchronize Giscus theme with palette -->
-                      <script>
-                        var giscus = document.querySelector("script[src*=giscus]")
-
-                        // Set palette on initial load
-                        var palette = __md_get("__palette")
-                        if (palette && typeof palette.color === "object") {
-                          var theme = palette.color.scheme === "slate"
-                            ? "transparent_dark"
-                            : "light"
-
-                          // Instruct Giscus to set theme
-                          giscus.setAttribute("data-theme", theme) 
-                        }
-
-                        // Register event handlers after documented loaded
-                        document.addEventListener("DOMContentLoaded", function() {
-                          var ref = document.querySelector("[data-md-component=palette]")
-                          ref.addEventListener("change", function() {
-                            var palette = __md_get("__palette")
-                            if (palette && typeof palette.color === "object") {
-                              var theme = palette.color.scheme === "slate"
-                                ? "transparent_dark"
-                                : "light"
-
-                              // Instruct Giscus to change theme
-                              var frame = document.querySelector(".giscus-frame")
-                              frame.contentWindow.postMessage(
-                                { giscus: { setConfig: { theme } } },
-                                "https://giscus.app"
-                              )
-                            }
-                          })
-                        })
-                      </script>
-                    {% endif %}
                   {% endblock %}
                 </article>
               </div>
@@ -281,6 +228,9 @@
           {%- if not mike or mike.config.version_selector -%}
             {%- set _ = app.update({ "version": config.extra.version }) -%}
           {%- endif -%}
+        {%- endif -%}
+        {%- if config.extra.tags -%}
+          {%- set _ = app.update({ "tags": config.extra.tags }) -%}
         {%- endif -%}
         {%- set translations = app.translations -%}
         {%- for key in [
