@@ -1,4 +1,8 @@
 - "2025":
+  - "2025-02-23":
+    - newpage:
+        text: Note 搭建维护小记
+        href: /blog/2025/02/23/note-搭建维护小记/
   - "2025-02-20":
     - function: 首页UI重构，完成了大部分新版兼容工作
     - function: 更新 Mkdoc Material [8.1.4 -> 9.6.4]，启用更多新特性

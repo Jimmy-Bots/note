@@ -2,66 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>http://note.jsta.top/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/changelog/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/links/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/about/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/about/board/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/blog/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>http://note.jsta.top/blog/2025/02/23/note-%E6%90%AD%E5%BB%BA%E7%BB%B4%E6%8A%A4%E5%B0%8F%E8%AE%B0/</loc>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/legacy/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/legacy/old_blog/20200309/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/legacy/old_blog/20200318/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/legacy/old_blog/20200328/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/ethernaut/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/hackergame2023/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/hackergame2024/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/zjuctf2023/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
     </url>
     <url>
          <loc>http://note.jsta.top/writeups/zjuctf2024/</loc>
-         <lastmod>2025-02-21</lastmod>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>http://note.jsta.top/blog/archive/2025/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>http://note.jsta.top/blog/category/mkdocs/</loc>
+         <lastmod>2025-02-23</lastmod>
+    </url>
+    <url>
+         <loc>http://note.jsta.top/blog/category/tech/</loc>
+         <lastmod>2025-02-23</lastmod>
     </url>
 </urlset>
