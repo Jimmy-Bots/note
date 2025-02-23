@@ -123,9 +123,9 @@ plugins:
   - search
   - glightbox:
       width: 80%
-  - encryptcontent:  # now just for one page, need to be improved
+  - encryptcontent:
       title_prefix: "🔒 "
-      remember_password: True 
+      remember_password: True
       default_expire_dalay: 48
       decryption_failure_message: 密码错误，再猜猜
       encrypted_something:
@@ -140,12 +140,14 @@ plugins:
       exclude:
         - index.md
         - blog/index.md
+        - writeups/zjuctf2023.md
+        - writeups/zjuctf2024.md
   - changelog
   - statistics:
       page_check_metadata: statistic
-  - toc
   - heti
-  # - tikzautomata
+  - toc
+  - tikzautomata
 
 
 nav:
