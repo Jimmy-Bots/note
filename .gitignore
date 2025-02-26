@@ -1,9 +1,6 @@
 .DS_Store
 site/
 
-# Drafts
-docs/blog/posts/draft/*
-
 # Encrypted Files
 docs/writeups/zjuctf2023.md
 docs/writeups/zjuctf2024.md

@@ -136,7 +136,7 @@ plugins:
       timezone: Asia/Shanghai
       locale: zh
       enable_creation_date: true
-      enabled: !ENV [CI, false]
+      # enabled: !ENV [CI, false]
       exclude:
         - index.md
         - blog/index.md

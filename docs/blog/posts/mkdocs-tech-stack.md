@@ -5,6 +5,7 @@ authors:
 categories:
   - Mkdocs
   - Tech
+counter: true
 ---
 # Note 搭建维护小记
 
@@ -21,7 +22,6 @@ categories:
 |---|---|---|
 |mkdocs|1.6.1|Fork from Offical [mkdocs](https://github.com/mkdocs/mkdocs/commit/bb7e8b62185b11d9f59bb7f50b13c15134f62f8a)|
 |mkdocs-material|9.6.5|Fork from Offical [Material](https://github.com/squidfunk/mkdocs-material/commit/7445b2aa608fd1312914103de10949b970b49142)|
-|mkdocs-material-extensions|1.3.1|Same as the above|
 |mkdocs-glightbox|0.4.0|Fork from Offical [mkdocs-glightbox](https://github.com/blueswen/mkdocs-glightbox/commit/7f68f19556c8d91eb45bed2f5e3b93f9d0b4e591)|
 |mkdocs-git-revision-date-localized-plugin|1.3.0|Fork from Offical [mkdocs-git-revision-date-localized-plugin](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin/commit/2e7646ee3405d8793e5ebb83eb45f7aa9407b205)|
 |mkdocs-encryptcontent-plugin|2.2.1|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-toolchain)|
@@ -95,6 +95,8 @@ categories:
     ```
 
 ## 修复enrypt-plugin
+
+~~*后来发现新版本好像已经修了，不过问题不大*~~
 
 在使用加密插件的时候，通过使用以下配置来同时加密toc
 
