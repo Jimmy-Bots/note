@@ -168,6 +168,8 @@ nav:
       - 2024:
         - Hackergame 2024: writeups/hackergame2024.md
         - ZJUCTF 2024: writeups/zjuctf2024.md
+      - 2025:
+        - SJTUCTF 2025: writeups/sjtuctf2025.md
   - Legacy:
     - legacy/index.md
     - Old Blog:
