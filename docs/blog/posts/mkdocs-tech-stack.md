@@ -5,7 +5,6 @@ authors:
 categories:
   - Mkdocs
   - Tech
-counter: true
 ---
 # Note 搭建维护小记
 

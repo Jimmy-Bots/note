@@ -145,6 +145,7 @@ plugins:
   - changelog
   - statistics:
       page_check_metadata: statistic
+      page_template: templates/page_statistics.html
   - heti
   - toc
   - tikzautomata
