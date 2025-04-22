@@ -1,4 +1,8 @@
 - "2025":
+  - "2025-04-22":
+    - newpage:
+        text: 自建服务的简单记录
+        href: "/blog/2025/04/22/自建服务的简单记录/"
   - "2025-04-09":
     - newpage:
         text: "SJTUCTF 2025 Writeup"
