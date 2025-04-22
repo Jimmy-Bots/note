@@ -21,7 +21,7 @@
 -->
 
 <!-- Post excerpt -->
-<article class="md-post md-post--excerpt">
+<article class="md-post md-post--excerpt" style="margin-bottom: 3.5em;margin-top: 3.5em;">
   <header class="md-post__header">
 
     <!-- Post authors -->
@@ -92,7 +92,7 @@
     <!-- Continue reading link -->
     {% if post.more %}
       <nav class="md-post__action">
-        <a href="{{ post.url | url }}">
+        <a href="{{ post.url | url }}" style="opacity: 0.7;">
           {{ lang.t("blog.continue") }}
         </a>
       </nav>
