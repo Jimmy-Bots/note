@@ -328,6 +328,14 @@ var _hmt = _hmt || [];
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../blog/category/python/">
+<span class="md-ellipsis">
+    Python
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../blog/category/tech/">
 <span class="md-ellipsis">
     Tech
@@ -1063,9 +1071,9 @@ var _hmt = _hmt || [];
 <p>直接<span class="heti-skip"><span class="heti-spacing"> </span>F12<span class="heti-spacing"> </span></span>看源码，发现后端是一次性把所有消息都发过来，那就很简单，之间找出满足要求的消息然后发起撤回请求即可。不过不能一次性都撤回，后端有<span class="heti-skip"><span class="heti-spacing"> </span>Delay<span class="heti-spacing"> </span></span>时间要求，可以根据消息内的<span class="heti-skip"><span class="heti-spacing"> </span>Delay<span class="heti-spacing"> </span></span>信息延迟后发送，当然也可以一直发送直到成功即可（主要省力无脑</p>
 <details class="done">
 <summary>解题代码（慎用，概率事件，多试几次就好）</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span> <span class="nn">requests</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span> <span class="nn">json</span>
-<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">sleep</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">time</span><span class="w"> </span><span class="kn">import</span> <span class="n">sleep</span>
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a><span class="n">cookies</span> <span class="o">=</span> <span class="p">{</span>
 <a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>    <span class="s1">'session'</span><span class="p">:</span> <span class="s1">'token'</span>
 <a href="#__codelineno-0-6" id="__codelineno-0-6" name="__codelineno-0-6"></a><span class="p">}</span>
@@ -1073,7 +1081,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-0-8" id="__codelineno-0-8" name="__codelineno-0-8"></a><span class="n">msg</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">msg</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
 <a href="#__codelineno-0-9" id="__codelineno-0-9" name="__codelineno-0-9"></a><span class="n">msg</span> <span class="o">=</span> <span class="n">msg</span><span class="p">[</span><span class="s1">'messages'</span><span class="p">]</span>
 <a href="#__codelineno-0-10" id="__codelineno-0-10" name="__codelineno-0-10"></a>
-<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">def</span> <span class="nf">back</span><span class="p">(</span><span class="n">idx</span><span class="p">):</span>
+<a href="#__codelineno-0-11" id="__codelineno-0-11" name="__codelineno-0-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">back</span><span class="p">(</span><span class="n">idx</span><span class="p">):</span>
 <a href="#__codelineno-0-12" id="__codelineno-0-12" name="__codelineno-0-12"></a>    <span class="n">back</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s1">'http://202.38.93.111:10021/api/deleteMessage'</span><span class="p">,</span> <span class="n">cookies</span><span class="o">=</span><span class="n">cookies</span><span class="p">,</span> <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s1">'id'</span><span class="p">:</span> <span class="n">idx</span><span class="p">})</span>
 <a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="k">try</span><span class="p">:</span>
 <a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>        <span class="n">back</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">back</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
@@ -1202,10 +1210,10 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-16-5" id="__codelineno-16-5" name="__codelineno-16-5"></a><span class="n">cod_dict</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'ct{l-findiehaai{oveatas'</span><span class="p">]</span>
 <a href="#__codelineno-16-6" id="__codelineno-16-6" name="__codelineno-16-6"></a><span class="n">cod_dict</span> <span class="o">+=</span> <span class="p">[</span><span class="s1">'ty9kxborszstguyd?!blm-p'</span><span class="p">]</span>
 <a href="#__codelineno-16-7" id="__codelineno-16-7" name="__codelineno-16-7"></a>
-<a href="#__codelineno-16-8" id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="k">def</span> <span class="nf">get_cod_dict</span><span class="p">(</span><span class="n">c_dict</span><span class="p">):</span>
+<a href="#__codelineno-16-8" id="__codelineno-16-8" name="__codelineno-16-8"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_cod_dict</span><span class="p">(</span><span class="n">c_dict</span><span class="p">):</span>
 <a href="#__codelineno-16-9" id="__codelineno-16-9" name="__codelineno-16-9"></a>    <span class="k">return</span> <span class="s1">''</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c_dict</span><span class="p">)</span>
 <a href="#__codelineno-16-10" id="__codelineno-16-10" name="__codelineno-16-10"></a>
-<a href="#__codelineno-16-11" id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="k">def</span> <span class="nf">decrypt_data</span><span class="p">(</span><span class="n">input_codes</span><span class="p">):</span>
+<a href="#__codelineno-16-11" id="__codelineno-16-11" name="__codelineno-16-11"></a><span class="k">def</span><span class="w"> </span><span class="nf">decrypt_data</span><span class="p">(</span><span class="n">input_codes</span><span class="p">):</span>
 <a href="#__codelineno-16-12" id="__codelineno-16-12" name="__codelineno-16-12"></a>    <span class="n">flags</span> <span class="o">=</span> <span class="p">[]</span>
 <a href="#__codelineno-16-13" id="__codelineno-16-13" name="__codelineno-16-13"></a>    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">23</span><span class="p">):</span>
 <a href="#__codelineno-16-14" id="__codelineno-16-14" name="__codelineno-16-14"></a>        <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>
@@ -1260,10 +1268,10 @@ var _hmt = _hmt || [];
 <p>需要知道图像的长宽，怎么办呢？手动<span class="heti-skip"><span class="heti-spacing"> </span>plot<span class="heti-spacing"> </span></span>出来看呗，反正试一下很容易找到周期性重复的东西，然后微调一下得到长宽，直接输出视频即可。</p>
 <details class="done 解题代码">
 <summary>Done</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="kn">import</span> <span class="nn">cv2</span>
-<a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-17-1" id="__codelineno-17-1" name="__codelineno-17-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">cv2</span>
+<a href="#__codelineno-17-2" id="__codelineno-17-2" name="__codelineno-17-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
 <a href="#__codelineno-17-3" id="__codelineno-17-3" name="__codelineno-17-3"></a>
-<a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="k">def</span> <span class="nf">restore_video</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
+<a href="#__codelineno-17-4" id="__codelineno-17-4" name="__codelineno-17-4"></a><span class="k">def</span><span class="w"> </span><span class="nf">restore_video</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">output</span><span class="p">):</span>
 <a href="#__codelineno-17-5" id="__codelineno-17-5" name="__codelineno-17-5"></a>    <span class="n">frame_width</span> <span class="o">=</span> <span class="mi">427</span>
 <a href="#__codelineno-17-6" id="__codelineno-17-6" name="__codelineno-17-6"></a>    <span class="n">frame_height</span> <span class="o">=</span> <span class="mi">759</span>
 <a href="#__codelineno-17-7" id="__codelineno-17-7" name="__codelineno-17-7"></a>    <span class="n">frame_count</span> <span class="o">=</span> <span class="mi">139</span>
@@ -1354,7 +1362,7 @@ var _hmt = _hmt || [];
 <p>这道题记录一下，因为逆向的题目做得少，所以需要积累一下。</p>
 <details class="done">
 <summary>官方题解中需要记录的习惯</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kn">import</span> <span class="nn">angr</span><span class="o">,</span> <span class="nn">monkeyhex</span><span class="o">,</span> <span class="nn">claripy</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">angr</span><span class="o">,</span><span class="w"> </span><span class="nn">monkeyhex</span><span class="o">,</span><span class="w"> </span><span class="nn">claripy</span>
 <a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="n">proj</span> <span class="o">=</span> <span class="n">angr</span><span class="o">.</span><span class="n">Project</span><span class="p">(</span><span class="s1">'no_need_for_F5/main.exe'</span><span class="p">)</span>
 <a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="n">flag_chars</span> <span class="o">=</span> <span class="p">[</span><span class="n">claripy</span><span class="o">.</span><span class="n">BVS</span><span class="p">(</span><span class="s1">'flag_</span><span class="si">%d</span><span class="s1">'</span> <span class="o">%</span> <span class="n">i</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">32</span><span class="p">)]</span>
 <a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a><span class="n">flag</span> <span class="o">=</span> <span class="n">claripy</span><span class="o">.</span><span class="n">Concat</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">claripy</span><span class="o">.</span><span class="n">BVV</span><span class="p">(</span><span class="sa">b</span><span class="s1">'flag{'</span><span class="p">)]</span><span class="o">+</span><span class="n">flag_chars</span><span class="o">+</span><span class="p">[</span><span class="n">claripy</span><span class="o">.</span><span class="n">BVV</span><span class="p">(</span><span class="sa">b</span><span class="s1">'}</span><span class="se">\x00</span><span class="s1">'</span><span class="p">)])</span>
@@ -1362,14 +1370,14 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-19-6" id="__codelineno-19-6" name="__codelineno-19-6"></a><span class="n">input_addr</span> <span class="o">=</span> <span class="mi">0</span>
 <a href="#__codelineno-19-7" id="__codelineno-19-7" name="__codelineno-19-7"></a>
 <a href="#__codelineno-19-8" id="__codelineno-19-8" name="__codelineno-19-8"></a><span class="nd">@proj</span><span class="o">.</span><span class="n">hook</span><span class="p">(</span><span class="mh">0x140001093</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<a href="#__codelineno-19-9" id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="k">def</span> <span class="nf">get_input</span><span class="p">(</span><span class="n">state</span><span class="p">):</span>
+<a href="#__codelineno-19-9" id="__codelineno-19-9" name="__codelineno-19-9"></a><span class="k">def</span><span class="w"> </span><span class="nf">get_input</span><span class="p">(</span><span class="n">state</span><span class="p">):</span>
 <a href="#__codelineno-19-10" id="__codelineno-19-10" name="__codelineno-19-10"></a>    <span class="k">global</span> <span class="n">input_addr</span>
 <a href="#__codelineno-19-11" id="__codelineno-19-11" name="__codelineno-19-11"></a>    <span class="n">input_addr</span> <span class="o">=</span> <span class="n">state</span><span class="o">.</span><span class="n">regs</span><span class="o">.</span><span class="n">rdx</span>
 <a href="#__codelineno-19-12" id="__codelineno-19-12" name="__codelineno-19-12"></a>    <span class="n">state</span><span class="o">.</span><span class="n">memory</span><span class="o">.</span><span class="n">store</span><span class="p">(</span><span class="n">input_addr</span><span class="p">,</span><span class="n">flag</span><span class="p">)</span>
 <a href="#__codelineno-19-13" id="__codelineno-19-13" name="__codelineno-19-13"></a>    <span class="nb">print</span><span class="p">(</span><span class="s1">'Input done'</span><span class="p">)</span>
 <a href="#__codelineno-19-14" id="__codelineno-19-14" name="__codelineno-19-14"></a>
 <a href="#__codelineno-19-15" id="__codelineno-19-15" name="__codelineno-19-15"></a><span class="nd">@proj</span><span class="o">.</span><span class="n">hook</span><span class="p">(</span><span class="mh">0x140001079</span><span class="p">,</span> <span class="n">length</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
-<a href="#__codelineno-19-16" id="__codelineno-19-16" name="__codelineno-19-16"></a><span class="k">def</span> <span class="nf">printf</span><span class="p">(</span><span class="n">state</span><span class="p">):</span>
+<a href="#__codelineno-19-16" id="__codelineno-19-16" name="__codelineno-19-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">printf</span><span class="p">(</span><span class="n">state</span><span class="p">):</span>
 <a href="#__codelineno-19-17" id="__codelineno-19-17" name="__codelineno-19-17"></a>    <span class="k">return</span>
 <a href="#__codelineno-19-18" id="__codelineno-19-18" name="__codelineno-19-18"></a>
 <a href="#__codelineno-19-19" id="__codelineno-19-19" name="__codelineno-19-19"></a><span class="n">simgr</span> <span class="o">=</span> <span class="n">proj</span><span class="o">.</span><span class="n">factory</span><span class="o">.</span><span class="n">simgr</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
@@ -1386,7 +1394,7 @@ var _hmt = _hmt || [];
 <p>这里其实可以随便搜索，下面都代码改一下都可以搜，随便搜。</p>
 <details>
 <summary>搜索合适的<span class="heti-skip"><span class="heti-spacing"> </span>admin<span class="heti-spacing"> </span></span>用户</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">product</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-21-1" id="__codelineno-21-1" name="__codelineno-21-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">product</span>
 <a href="#__codelineno-21-2" id="__codelineno-21-2" name="__codelineno-21-2"></a><span class="n">str1</span> <span class="o">=</span> <span class="s1">'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'</span>
 <a href="#__codelineno-21-3" id="__codelineno-21-3" name="__codelineno-21-3"></a><span class="n">prefix</span> <span class="o">=</span> <span class="s1">'admin:'</span>
 <a href="#__codelineno-21-4" id="__codelineno-21-4" name="__codelineno-21-4"></a>
@@ -1405,11 +1413,11 @@ var _hmt = _hmt || [];
 <p>然后就算一下<span class="heti-skip"><span class="heti-spacing"> </span>SHA1<span class="heti-spacing"> </span></span>后拼接即可，解题脚本如下：</p>
 <details class="done">
 <summary>解题脚本（修改版，原版太杂乱了）</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="kn">from</span> <span class="nn">hashlib</span> <span class="kn">import</span> <span class="n">sha1</span>
-<a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="kn">from</span> <span class="nn">pwn</span> <span class="kn">import</span> <span class="o">*</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-22-1" id="__codelineno-22-1" name="__codelineno-22-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">hashlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">sha1</span>
+<a href="#__codelineno-22-2" id="__codelineno-22-2" name="__codelineno-22-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">pwn</span><span class="w"> </span><span class="kn">import</span> <span class="o">*</span>
 <a href="#__codelineno-22-3" id="__codelineno-22-3" name="__codelineno-22-3"></a>
 <a href="#__codelineno-22-4" id="__codelineno-22-4" name="__codelineno-22-4"></a><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">data</span><span class="p">:</span> <span class="n">sha1</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-<a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="k">def</span> <span class="nf">com</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+<a href="#__codelineno-22-5" id="__codelineno-22-5" name="__codelineno-22-5"></a><span class="k">def</span><span class="w"> </span><span class="nf">com</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
 <a href="#__codelineno-22-6" id="__codelineno-22-6" name="__codelineno-22-6"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">):</span>
 <a href="#__codelineno-22-7" id="__codelineno-22-7" name="__codelineno-22-7"></a>        <span class="n">t</span> <span class="o">=</span> <span class="n">x</span>
 <a href="#__codelineno-22-8" id="__codelineno-22-8" name="__codelineno-22-8"></a>    <span class="k">else</span><span class="p">:</span>
@@ -1430,7 +1438,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-22-23" id="__codelineno-22-23" name="__codelineno-22-23"></a>    <span class="n">p</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s1">'Choice:'</span><span class="p">)</span>
 <a href="#__codelineno-22-24" id="__codelineno-22-24" name="__codelineno-22-24"></a>    <span class="n">p</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="sa">b</span><span class="s1">'1'</span><span class="p">)</span>
 <a href="#__codelineno-22-25" id="__codelineno-22-25" name="__codelineno-22-25"></a>
-<a href="#__codelineno-22-26" id="__codelineno-22-26" name="__codelineno-22-26"></a>    <span class="k">def</span> <span class="nf">sendu</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+<a href="#__codelineno-22-26" id="__codelineno-22-26" name="__codelineno-22-26"></a>    <span class="k">def</span><span class="w"> </span><span class="nf">sendu</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
 <a href="#__codelineno-22-27" id="__codelineno-22-27" name="__codelineno-22-27"></a>        <span class="n">p</span><span class="o">.</span><span class="n">recvuntil</span><span class="p">(</span><span class="s1">'&gt;'</span><span class="p">)</span>
 <a href="#__codelineno-22-28" id="__codelineno-22-28" name="__codelineno-22-28"></a>        <span class="n">p</span><span class="o">.</span><span class="n">sendline</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 <a href="#__codelineno-22-29" id="__codelineno-22-29" name="__codelineno-22-29"></a>
