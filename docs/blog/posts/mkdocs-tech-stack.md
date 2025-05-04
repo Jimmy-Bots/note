@@ -28,7 +28,7 @@ categories:
 |mkdocs-heti-plugin|0.1.6|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-heti-plugin)|
 |mkdocs-statistics-plugin|0.1.4|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-statistics-plugin)|
 |mkdocs-tikzautomata-plugin|0.0.1|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-toolchain)|
-|mkdocs-toc-plugin|0.0.2|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-toolchain)|
+|mkdocs-toc-plugin|0.0.1|Fork from [TonyCrane](https://github.com/TonyCrane/mkdocs-toolchain)|
 
 > **glightbox**: 实现图片点击放大查看
 >
