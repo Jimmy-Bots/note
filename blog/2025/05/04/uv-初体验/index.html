@@ -527,6 +527,14 @@ var _hmt = _hmt || [];
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../../writeups/zjuctf2025/">
+<span class="md-ellipsis">
+    🔒 ZJUCTF 2025
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -831,8 +839,8 @@ var _hmt = _hmt || [];
 <h3 id="mirrors-and-packages">Mirrors and Packages<a class="headerlink" href="#mirrors-and-packages" title="Permanent link">¶</a></h3>
 <p><code>uv</code>可以指定镜像源，我为了图省力方便，就直接全局修改了，其全局配置文件在<code>~/.uv/config.toml</code>，可以直接修改。</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">[[index]]</span>
-<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"https://mirrors.zju.edu.cn/pypi/web/simple"</span>
-<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w">  </span>
+<a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://mirrors.zju.edu.cn/pypi/web/simple"</span>
+<a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="n">default</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">true</span><span class="w">  </span>
 </code></pre></div>
 <p>当然还可以通过环境变量、<code>pyproject.toml</code>进行配置，这里就不过多赘述了，具体可以看<a href="https://docs.astral.sh/uv/configuration/files/">官方文档</a></p>
 <p>换完镜像源后，下一步就可以开始安装包了，安装方式也是非常简单的，和之前使用<code>pip</code>安装基本没有区别。</p>

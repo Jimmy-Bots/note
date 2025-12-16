@@ -527,6 +527,14 @@ var _hmt = _hmt || [];
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../../../writeups/zjuctf2025/">
+<span class="md-ellipsis">
+    🔒 ZJUCTF 2025
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -947,7 +955,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-3-23" id="__codelineno-3-23" name="__codelineno-3-23"></a>  <span class="n">item</span><span class="p">[</span><span class="s1">'style'</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"display:none"</span>
 </code></pre></div>
 <p>首先<code>item</code>的类型是<code>bs4.element.Tag</code>，我们可以知道它有一个<code>content</code>属性用来存放其中存储的内容，在加密源码中我们可以发现，它直接对<code>content</code>进行了赋值操作，这是一个有问题的操作，单纯的赋值并没有对<span class="heti-skip"><span class="heti-spacing"> </span>tree<span class="heti-spacing"> </span></span>进行任何改变，所以对最终的<span class="heti-skip"><span class="heti-spacing"> </span>html<span class="heti-spacing"> </span></span>没有任何影响。于是看一下<code>tag</code>的源码</p>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">def</span><span class="w"> </span><span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">decompose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">def</span> <span class="nf">clear</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">decompose</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
 <a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="w">  </span><span class="sd">"""Wipe out all children of this PageElement by calling extract()</span>
 <a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a><span class="sd">      on them.</span>
 <a href="#__codelineno-4-4" id="__codelineno-4-4" name="__codelineno-4-4"></a>
@@ -965,7 +973,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-4-16" id="__codelineno-4-16" name="__codelineno-4-16"></a>      <span class="n">element</span><span class="o">.</span><span class="n">extract</span><span class="p">()</span>
 <a href="#__codelineno-4-17" id="__codelineno-4-17" name="__codelineno-4-17"></a>
 <a href="#__codelineno-4-18" id="__codelineno-4-18" name="__codelineno-4-18"></a><span class="nd">@string</span><span class="o">.</span><span class="n">setter</span>
-<a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a>  <span class="k">def</span><span class="w"> </span><span class="nf">string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">string</span><span class="p">):</span>
+<a href="#__codelineno-4-19" id="__codelineno-4-19" name="__codelineno-4-19"></a>  <span class="k">def</span> <span class="nf">string</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">string</span><span class="p">):</span>
 <a href="#__codelineno-4-20" id="__codelineno-4-20" name="__codelineno-4-20"></a><span class="w">    </span><span class="sd">"""Replace this PageElement's contents with `string`."""</span>
 <a href="#__codelineno-4-21" id="__codelineno-4-21" name="__codelineno-4-21"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 <a href="#__codelineno-4-22" id="__codelineno-4-22" name="__codelineno-4-22"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">string</span><span class="o">.</span><span class="vm">__class__</span><span class="p">(</span><span class="n">string</span><span class="p">))</span>

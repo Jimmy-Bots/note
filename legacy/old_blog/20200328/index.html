@@ -508,6 +508,14 @@ var _hmt = _hmt || [];
   </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../writeups/zjuctf2025/">
+<span class="md-ellipsis">
+    🔒 ZJUCTF 2025
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -753,8 +761,8 @@ var _hmt = _hmt || [];
 <p>之所以有所不妥，是因为这里有点类似<span class="heti-skip"><span class="heti-spacing"> </span>[^<span class="heti-spacing"> </span></span>冯诺依曼机<span class="heti-skip"><span class="heti-spacing"> </span>]<span class="heti-spacing"> </span></span>的一步到位的想法，但是采取这样的方法可以使适应度达到<span><span class="heti-spacing"> </span>100%</span>，所以这里就采用了整体优势补全的方法。</p>
 <details open="open">
 <summary><span>Python<span class="heti-spacing"> </span></span>实现代码</summary>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">random</span><span class="w"> </span><span class="kn">import</span> <span class="n">randint</span>
-<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">getBirth</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a><span class="k">def</span> <span class="nf">getBirth</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
 <a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a>    <span class="n">f</span><span class="o">=-</span><span class="mi">1</span> 
 <a href="#__codelineno-0-4" id="__codelineno-0-4" name="__codelineno-0-4"></a>    <span class="k">while</span> <span class="n">f</span><span class="o">==-</span><span class="mi">1</span><span class="p">:</span> <span class="c1">#避免产生1和0数目相同的初始状态</span>
 <a href="#__codelineno-0-5" id="__codelineno-0-5" name="__codelineno-0-5"></a>        <span class="n">s</span><span class="o">=</span><span class="s1">''</span>
@@ -768,7 +776,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-0-13" id="__codelineno-0-13" name="__codelineno-0-13"></a>            <span class="n">f</span><span class="o">=</span><span class="mi">1</span>
 <a href="#__codelineno-0-14" id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="k">return</span> <span class="n">s</span><span class="p">,</span><span class="n">f</span>
 <a href="#__codelineno-0-15" id="__codelineno-0-15" name="__codelineno-0-15"></a>
-<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="k">def</span><span class="w"> </span><span class="nf">getNext</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
+<a href="#__codelineno-0-16" id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="k">def</span> <span class="nf">getNext</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">f</span><span class="p">):</span>
 <a href="#__codelineno-0-17" id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">rule</span><span class="o">=</span><span class="s1">'0000010100000110000101011000</span><span class="se">\</span>
 <a href="#__codelineno-0-18" id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="s1">011100000111000001000001010101</span><span class="se">\</span>
 <a href="#__codelineno-0-19" id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="s1">010111011001000111011100000101</span><span class="se">\</span>
@@ -787,7 +795,7 @@ var _hmt = _hmt || [];
 <a href="#__codelineno-0-32" id="__codelineno-0-32" name="__codelineno-0-32"></a>        <span class="n">nextGeneration</span><span class="o">+=</span><span class="n">rule</span><span class="p">[</span><span class="n">s</span><span class="p">]</span>
 <a href="#__codelineno-0-33" id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="k">return</span> <span class="n">nextGeneration</span>
 <a href="#__codelineno-0-34" id="__codelineno-0-34" name="__codelineno-0-34"></a>
-<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="k">def</span><span class="w"> </span><span class="nf">main</span><span class="p">():</span>
+<a href="#__codelineno-0-35" id="__codelineno-0-35" name="__codelineno-0-35"></a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
 <a href="#__codelineno-0-36" id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="n">num</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="c1">#记录成功次数</span>
 <a href="#__codelineno-0-37" id="__codelineno-0-37" name="__codelineno-0-37"></a>    <span class="n">datas</span><span class="o">=</span><span class="mi">200</span> <span class="c1">#测试数据总数</span>
 <a href="#__codelineno-0-38" id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">datas</span><span class="p">):</span>
