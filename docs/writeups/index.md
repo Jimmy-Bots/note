@@ -19,5 +19,6 @@
   - 🔒 ZJUCTF 2024: zjuctf2024/
 - '2025':
   - SJTUCTF 2025: sjtuctf2025/
+  - 🔒 ZJUCTF 2025: zjuctf2025/
 
 {{ END_TOC }}
